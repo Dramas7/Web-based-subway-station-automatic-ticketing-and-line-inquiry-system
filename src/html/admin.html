@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/vue2.6.js"></script>
+    <script src="../js/admin.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <aside>
+            <ul>
+                <li id="data-listener" @click="n = 1"><a href="#">数据监控</a></li>
+                <li class="info-management"><a href="#">信息管理</a></li>
+                <li class="ticket-management" @click="n = 2"><a href="#">票价管理</a></li>
+                <li class="station-management" @click="n = 3"><a href="#">站点管理</a></li>
+                <li class="order-management" @click="n = 4"><a href="#">订单管理</a></li>
+            </ul>
+        </aside>
+        <div class="blank"></div>
+        <main>
+            <!-- 票价管理 -->
+            <div id="ticket-management" v-show="n === 2">
+                <p class="tips">可在文本框内调整价格</p>
+                <table id="ticket-management-table">
+                    <tbody>
+                        <tr>
+                            <td>起步价:</td>
+                            <td><input type="text" v-model="prices.pricesFirst" value="2"> <span>¥</span></td>
+                        </tr>
+                        <tr>
+                            <td>4~12km:</td>
+                            <td><input type="text" v-model="prices.pricesSecond"> <span>km/¥</span></td>
+                        </tr>
+                        <tr>
+                            <td>12~24km:</td>
+                            <td><input type="text" v-model="prices.pricesThird"> <span>km/¥</span></td>
+                        </tr>
+                        <tr>
+                            <td>>24km:</td>
+                            <td><input type="text" v-model="prices.pricesFourth"> <span>km/¥</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="fare-rules">
+                    <p class="fare-rules-header">票价规则</p>
+                    <p>起步价：首4公里<span>{{prices.pricesFirst}}</span>元；</p>
+                    <p>4公里至12公里部分，每元可乘坐<span>{{prices.pricesSecond}}</span>公里；</p>
+                    <p>12公里至24公里部分，每元可乘坐<span>{{prices.pricesThird}}</span>公里；</p>
+                    <p>超过24公里，每元可乘坐<span>{{prices.pricesFourth}}</span>公里。</p>
+                </div>
+            </div>
+            <!-- 订单管理 -->
+            <div id="order-management" v-show="n === 4">
+                <table id="order-management-table">
+                    <thead>
+                        <tr>
+                            <td>用户名</td>
+                            <td>用户邮箱</td>
+                            <td>申请时间</td>
+                            <td>申请原因</td>
+                            <td>票价</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dramas</td>
+                            <td>813347016@qq.com</td>
+                            <td>2022-4-20 11:40:33</td>
+                            <td>临时有急事</td>
+                            <td>4<span>¥</span></td>
+                            <td>
+                                <button>同意</button>
+                                <button>拒绝</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="station-management" v-if="n === 3">
+                <ul id="first-line-stations" class="clearfix">
+                    <div class="wrapper clearfix">
+                        <li class="line-name">1号线：</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>江门站<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="first-line-station">启超大道——</li>
+                        <li class="transfer first-line-station third-line-station"><span
+                                class="transfer first-line-station"></span>中心南路<span
+                                class="transfer third-line-station"></span>——</li>
+                        <li class="first-line-station">冈州大道——</li>
+                        <li class="first-line-station">会城大道——</li>
+                        <li class="first-line-station">龙湾路——</li>
+                        <li class="first-line-station">白沙大道——</li>
+                        <li class="first-line-station">华园路——</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>市政府<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="first-line-station">五邑大学——</li>
+                        <li class="transfer first-line-station forth-line-station"><span
+                                class="transfer first-line-station"></span>龙溪<span
+                                class="transfer forth-line-station"></span>——</li>
+                        <li class="first-line-station">北环路——</li>
+                        <li class="first-line-station">水厂——</li>
+                        <li class="first-line-station">周郡——</li>
+                        <li class="first-line-station">大林——</li>
+                        <li class="first-line-station">华盛路——</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>滨江<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="first-line-station">棠下——</li>
+                        <li class="first-line-station">竹溪——</li>
+                        <li class="first-line-station">雅瑶——</li>
+                        <li class="first-line-station">月光——</li>
+                        <li class="first-line-station">鹤山东站——</li>
+                        <li class="first-line-station">古桥——</li>
+                        <li class="first-line-station">鹤山行政中心——</li>
+                        <li class="first-line-station">沙坪——</li>
+                        <li class="first-line-station">新城路——</li>
+                        <li class="first-line-station">古劳水乡</li>
+                    </div>
+                </ul>
+                <ul id="second-line-stations" class="clearfix">
+                    <div class="wrapper clearfix">
+                        <li class="line-name">2号线：</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>江门站<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="second-line-station">礼东——</li>
+                        <li class="transfer second-line-station third-line-station"><span
+                                class="transfer second-line-station"></span>东海路<span
+                                class="transfer third-line-station"></span>——</li>
+                        <li class="second-line-station">江海——</li>
+                        <li class="second-line-station">江门东站——</li>
+                        <li class="second-line-station">新南里——</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>市政府<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="transfer second-line-station forth-line-station"><span
+                                class="transfer second-line-station"></span>东方广场<span
+                                class="transfer forth-line-station"></span>——</li>
+                        <li class="second-line-station">建设二路——</li>
+                        <li class="second-line-station">汽车站——</li>
+                        <li class="second-line-station">潮江里——</li>
+                        <li class="second-line-station">新南路——</li>
+                        <li class="transfer first-line-station second-line-station"><span
+                                class="transfer first-line-station"></span>滨江<span
+                                class="transfer second-line-station"></span>——</li>
+                        <li class="second-line-station">滨江南——</li>
+                        <li class="second-line-station">仙溪——</li>
+                        <li class="second-line-station">虎岭——</li>
+                        <li class="second-line-station">滨江尾</li>
+                    </div>
+                </ul>
+                <ul id="third-line-stations" class="clearfix">
+                    <div class="wrapper clearfix">
+                        <li class="line-name">3号线：</li>
+                        <li class="third-line-station">司前——</li>
+                        <li class="third-line-station">金泽路——</li>
+                        <li class="third-line-station">大泽——</li>
+                        <li class="third-line-station">五和——</li>
+                        <li class="third-line-station">同仁——</li>
+                        <li class="third-line-station">工业园——</li>
+                        <li class="third-line-station">繁华路——</li>
+                        <li class="third-line-station">三和大道——</li>
+                        <li class="transfer first-line-station third-line-station"><span
+                                class="transfer first-line-station"></span>中心南路<span
+                                class="transfer third-line-station"></span>——</li>
+                        <li class="third-line-station">侨兴路——</li>
+                        <li class="third-line-station">汇源坊——</li>
+                        <li class="third-line-station">断河——</li>
+                        <li class="third-line-station">礼乐——</li>
+                        <li class="third-line-station">纳谷——</li>
+                        <li class="transfer second-line-station third-line-station"><span
+                                class="transfer second-line-station"></span>东海路<span
+                                class="transfer third-line-station"></span>——</li>
+                        <li class="third-line-station">广丰——</li>
+                        <li class="third-line-station">高新区——</li>
+                        <li class="third-line-station">兴宁——</li>
+                        <li class="third-line-station">横海——</li>
+                        <li class="third-line-station">科宛路——</li>
+                        <li class="third-line-station">金瓯路——</li>
+                        <li class="third-line-station">江海站——</li>
+                        <li class="third-line-station">外海</li>
+                    </div>
+                </ul>
+                <ul id="forth-line-stations" class="clearfix">
+                    <div class="wrapper clearfix">
+                        <li class="line-name">4号线：</li>
+                        <li class="forth-line-station">共和——</li>
+                        <li class="forth-line-station">杜阮——</li>
+                        <li class="forth-line-station">松岭——</li>
+                        <li class="forth-line-station">龙安——</li>
+                        <li class="forth-line-station">松翠——</li>
+                        <li class="forth-line-station">南户——</li>
+                        <li class="forth-line-station">蓬江站——</li>
+                        <li class="transfer second-line-station forth-line-station"><span
+                                class="transfer second-line-station"></span>东方广场<span
+                                class="transfer forth-line-station"></span>——</li>
+                        <li class="forth-line-station">万达——</li>
+                        <li class="transfer first-line-station forth-line-station"><span
+                                class="transfer first-line-station"></span>龙溪<span
+                                class="transfer forth-line-station"></span>——</li>
+                        <li class="forth-line-station">潮连——</li>
+                        <li class="forth-line-station">荷塘南——</li>
+                        <li class="forth-line-station">民兴路——</li>
+                        <li class="forth-line-station">中兴三路——</li>
+                        <li class="forth-line-station">中泰路——</li>
+                        <li class="forth-line-station">荷塘</li>
+                    </div>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
