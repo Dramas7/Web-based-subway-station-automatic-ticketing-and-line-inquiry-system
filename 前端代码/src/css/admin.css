@@ -1,0 +1,620 @@
+/* 配置初始样式 */
+:root {
+    --white: #e9e9e9;
+    --gray: #333;
+    --blue: #0367a6;
+    --lightblue: #008997;
+    --green: rgb(75, 164, 103);
+    --lightgreen: #329252;
+    --darkgreen: #2e623e;
+
+    --button--radius: 0.7rem;
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::selection {
+    background-color: rgb(15, 130, 91);
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    display: flex;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+/* 配置初始样式 */
+
+/* 弹出输入框样式规则 START */
+#station-management .message-ipt {
+    position: absolute;
+    width: 200px;
+    height: 134px;
+    z-index: 3;
+    left: 351px;
+    top: 43px;
+    display: none;
+}
+
+#station-management .message-ipt .title {
+    font-size: 16px;
+    font-style: italic;
+    position: absolute;
+    z-index: 2;
+    width: 193px;
+    top: 7px;
+    left: 5px;
+    color: var(--gray);
+}
+
+#station-management .message-ipt input {
+    width: 120px;
+    height: 19px;
+    line-height: 22px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: 3.2px solid black;
+    border-radius: 0.2rem;
+    top: 57px;
+    left: 20px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#station-management .message-ipt img {
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+#station-management .message-ipt .km {
+    position: absolute;
+    left: 153px;
+    top: 54.8px;
+    z-index: 2;
+    font-size: 19px;
+    color: brown;
+    font-weight: bold;
+}
+
+#station-management .message-ipt button {
+    position: absolute;
+    z-index: 2;
+    left: 80.5px;
+    top: 89px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px 7px;
+    background-color: var(--green);
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    color: white;
+    line-height: 17px;
+}
+
+#station-management .message-ipt button:active {
+    transform: scale(0.9);
+}
+
+#station-management .message-tip {
+    background: url(../svg/message.svg) no-repeat center center;
+    background-size: 187px;
+    position: absolute;
+    z-index: 5;
+    width: 187px;
+    height: 125px;
+    left: -51px;
+    top: -115px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    font-size: initial;
+    color: initial;
+}
+
+#station-management .stations-name {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 9px;
+    color: #062703;
+    font-size: 14px;
+}
+
+
+#station-management .main-info {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+#station-management .left-station {
+    margin-bottom: 5px;
+}
+
+#station-management .right-station {
+    margin-top: 3px;
+}
+
+#station-management .main-info .distance {
+    padding: 3px 8px;
+    background-color: #ddecdc78;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #5f6a58;
+    font-weight: bold;
+    height: 28.4px;
+    line-height: 25.6px;
+}
+
+#station-management .message-ipt .stations-name img {
+    width: 100px;
+    height: 100px;
+}
+
+/* 弹出输入框样式规则 END */
+
+/* 侧边导航栏样式 */
+aside {
+    width: 12.8%;
+    height: auto;
+    background-color: white;
+}
+
+aside>ul {
+    padding-top: 20px;
+    height: 100vh;
+}
+
+aside>ul.layui-nav * {
+    font-size: 20px;
+}
+
+.admin.layui-nav {
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.admin.layui-nav-tree {
+    width: 197.3px;
+}
+
+.admin.layui-nav {
+    position: fixed;
+    z-index: 5;
+}
+
+.admin>li:first-child {
+    margin-top: 15px;
+}
+
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this>a,
+.layui-nav-tree .layui-this>a:hover {
+    background-color: #128560;
+    color: #fff;
+}
+
+.admin.layui-nav-tree .layui-nav-item a {
+    height: 60px;
+    line-height: 60px;
+}
+
+/* 侧边导航栏样式 */
+
+
+/* 主体内容区样式 */
+main {
+    text-align: center;
+    width: 87.2%;
+    height: 100vh;
+    position: relative;
+}
+
+/* 主体内容区样式 */
+
+/* 数据监控区样式 START */
+#data-listener {
+    width: 100%;
+    background-color: #303347;
+    overflow: hidden;
+}
+
+#data-listener .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#data-listener .title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#data-listener .axis {
+    width: 600px;
+    height: 400px;
+}
+
+#data-listener .pie {
+    width: 400px;
+    height: 400px;
+}
+
+/* 数据监控区样式 END */
+
+
+/*  票价管理区样式*/
+.tips {
+    margin-bottom: -30px;
+    padding-top: 30px;
+    font-size: 28px;
+    color: rgb(134, 134, 134);
+    font-style: oblique;
+}
+
+#ticket-management {
+    background-color: var(--white);
+    padding-bottom: 30px;
+    display: none;
+}
+
+#ticket-management-table {
+    margin: 50px auto;
+    border: 5px solid rgb(6, 44, 18);
+    border-radius: 8px;
+}
+
+#ticket-management-table tbody tr td {
+    padding: 30px;
+    font-size: 30px;
+    border-bottom: 2px dashed rgb(6, 44, 18);
+    color: rgb(6, 44, 18);
+}
+
+#ticket-management-table tbody tr span {
+    color: rgb(175, 132, 77);
+}
+
+#ticket-management-table tbody tr:last-child td {
+    border: none;
+}
+
+#ticket-management-table tbody tr td:first-child {
+    padding-right: 0;
+}
+
+#ticket-management-table tbody tr td:last-child {
+    padding-left: 11px;
+}
+
+#ticket-management-table tbody tr:first-child td:first-child {
+    text-indent: 20%;
+}
+
+#ticket-management-table tbody tr:first-child td:last-child {
+    text-indent: -41%;
+}
+
+#ticket-management-table tbody tr:nth-child(3) td:first-child {
+    text-indent: -12%;
+}
+
+#ticket-management-table tbody tr:last-child td:first-child {
+    text-indent: 13%;
+}
+
+#ticket-management-table tbody tr td input[type="text"] {
+    outline: none;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(20, 71, 9);
+    border-radius: 15px;
+}
+
+#fare-rules .fare-rules-header {
+    font-style: normal;
+}
+
+.fare-rules-header::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#fare-rules p:first-child {
+    font-size: 27px;
+    font-style: bold;
+    color: rgb(104, 75, 75);
+}
+
+#fare-rules p {
+    padding-bottom: 15px;
+    font-size: 25px;
+    color: rgb(102, 100, 100);
+    font-style: italic;
+}
+
+#fare-rules p:first-child {
+    display: inline-block;
+    width: 135px;
+    color: white;
+    background-color: rgb(126, 25, 25);
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+#fare-rules p:first-child::after {
+    height: 100%;
+    vertical-align: middle;
+}
+
+#fare-rules p span {
+    color: brown;
+    font-weight: bold;
+}
+
+/*  票价管理区样式*/
+
+
+/* 订单管理区样式 */
+#order-management {
+    display: none;
+}
+
+#order-management-table {
+    margin: 20px auto;
+    border: 3px solid rgb(6, 44, 18);
+    border-radius: var(--button--radius);
+    width: 1300px;
+    background-color: var(--white);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+}
+
+#order-management-table thead {
+    font-weight: bold;
+}
+
+#order-management-table thead td {
+    border-bottom: 3px dashed rgb(81, 70, 55);
+    padding-top: 0.4em;
+    padding-bottom: 0.6em;
+}
+
+#order-management-table td {
+    text-align: center;
+    font-size: 1.7em;
+    width: 200px;
+}
+
+#order-management-table tbody tr:first-child td {
+    padding-top: 0.3em;
+}
+
+#order-management-table tbody tr:last-child td {
+    padding-bottom: 0.3em;
+}
+
+#order-management-table tbody tr td:nth-child(4) {
+    font-size: 1.4em;
+    color: rgb(7, 1, 70);
+}
+
+#order-management-table tbody tr td:nth-child(3) {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #717477;
+}
+
+#order-management-table tbody tr td:nth-child(2) {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #39434d;
+}
+
+#order-management-table tbody tr td:nth-child(5) {
+    width: 10%;
+    font-style: italic;
+    color: rgb(34, 2, 2);
+}
+
+#order-management-table tr td:last-child {
+    width: 150px;
+}
+
+#order-management-table tr td:first-child {
+    width: 150px;
+}
+
+#order-management-table button:first-child {
+    border-radius: var(--button--radius);
+    background-color: var(--blue);
+    border-radius: var(--button--radius);
+    border: 1px solid var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.1rem 1rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+#order-management-table button:last-child {
+    border-radius: var(--button--radius);
+    background-color: brown;
+    border-radius: var(--button--radius);
+    border: 1px solid brown;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.1rem 1rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+#order-management-table tbody td:nth-child(5) span {
+    color: rgb(203, 146, 71);
+}
+
+/* 订单管理区样式 */
+
+
+/* 站点管理区样式 */
+#station-management {
+    display: none;
+}
+
+#station-management .grid {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+#station-management ul {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#station-management ul:first-child {
+    margin-top: 30px;
+}
+
+#station-management ul li {
+    list-style: none;
+    float: left;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+
+
+#station-management #first-line-stations {
+    color: #cc0c30;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    width: 96%;
+}
+
+#station-management #second-line-stations {
+    color: #2e57d0;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    width: 96%;
+}
+
+#station-management #third-line-stations {
+    color: #7030a0;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    width: 96%;
+}
+
+#station-management #forth-line-stations {
+    color: #42c181;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    width: 96%;
+}
+
+#station-management ul li:first-child {
+    font-weight: bold;
+}
+
+.transfer {
+    font-weight: bold;
+}
+
+#station-management ul li span {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+}
+
+#station-management .grid .wrapper li span.staion-name {
+    display: inline;
+}
+
+#station-management ul li .arrow {
+    display: inline;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+#station-management span.transfer.first-line-station {
+    background-color: #cc0c30;
+}
+
+#station-management span.transfer.second-line-station {
+    background-color: #2e57d0;
+}
+
+#station-management span.transfer.third-line-station {
+    background-color: #7030a0;
+}
+
+#station-management span.transfer.forth-line-station {
+    background-color: #42c181;
+}
+
+#station-management ul li {
+    position: relative;
+}
+
+#station-management .title.big {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 25px 0 30px 0px;
+    padding: 12px 15px;
+    border-radius: 1rem;
+    font-weight: bold;
+    border: 3px solid rgb(214 226 224 / 59%);
+    color: var(--gray);
+}
+
+.wrapper {
+    padding-left: 15px;
+}
+
+/* 站点管理区样式 */

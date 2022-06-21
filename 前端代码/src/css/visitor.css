@@ -1,0 +1,1305 @@
+/* 基础规则配置 START */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: rgb(41, 145, 110);
+    color: aliceblue;
+}
+
+:root {
+    --white: #e9e9e9;
+    --gray: #333;
+    --blue: #0367a6;
+    --lightblue: #008997;
+    --green: rgba(17, 109, 65, 1);
+    --lightgreen: rgba(12, 114, 68, 1);
+
+    --maxheight: 400px;
+    --maxwidth: 647px;
+    --minwidth: 247px;
+
+    --button--radius: 0.7rem;
+
+    --box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* 基础规则配置 END */
+
+/* 公有规则 START */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mask-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2245px;
+    height: 1595px;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0.6;
+    display: none;
+}
+
+.not-login-tip-box {
+    position: fixed;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    display: none;
+    z-index: 10;
+}
+
+/* 公有规则 END */
+
+/* 提示用户登录框 START */
+.not-login-tip-box .container{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.3rem 1rem;    
+    width: 27rem;
+    border-radius: var(--button--radius);
+    box-shadow: var(--box-shadow);
+}
+
+.not-login-tip-box .tips {
+    margin: 0;
+    color: var(--gray);
+    padding-bottom: 9px;
+    border-bottom: 3px solid var(--green);
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+.not-login-tip-box .btn-group {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.not-login-tip-box .btn-group button {
+    padding: 0.3rem 1.5rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--green);
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button--radius);
+    font-weight: bold;
+    margin: 0 3rem;
+}
+
+.not-login-tip-box .btn-group button:active {
+    transform: scale(0.95);
+}
+/* 提示用户登录框 END */
+
+/* 线路示意图样式规则 START */
+
+#svg-container {
+    user-select: none;
+}
+
+#svg-container .circle {
+    cursor: pointer;
+}
+
+/* 线路示意图样式规则 END */
+
+/* 简易版线路查询侧边固定框样式 START*/
+#query-box-simple {
+    height: var(--maxheight);
+    width: var(--minwidth);
+    position: fixed;
+    left: 3.8%;
+    top: 16%;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    z-index: 6;
+}
+
+#query-box-simple img {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translateX(-50%);
+    height: 50px;
+    cursor: pointer;
+}
+
+#query-box-simple .title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+    color: #012e1a97;
+}
+
+#query-box-simple .title::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 97%;
+    background-color: #035a1c;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#query-box-simple .query-btn {
+    background-color: var(--blue);
+    background-image: linear-gradient(90deg, rgba(16, 121, 16, 0.652) 0%, rgba(23, 112, 23, 0.704) 74%);
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 2.5rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+#query-box-simple .query-btn:active {
+    transform: scale(0.95);
+}
+
+#query-box-simple .query-btn:focus {
+    outline: none;
+}
+
+#query-box-simple .point {
+    font-size: 1.5rem;
+    color: #02310f;
+    margin-top: 11%;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+#query-box-simple #main-area {
+    margin-top: 15px;
+}
+
+#query-box-simple #main-area .ipt {
+    border-radius: 0.3rem;
+    height: 1.5rem;
+    width: 85%;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    vertical-align: bottom;
+    margin-top: 8px;
+    color: var(--gray);
+    font-weight: initial;
+    text-indent: 1rem;
+}
+
+#query-box-simple .btn-container {
+    margin-top: 24%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+/* 简易版侧边固定框样式END */
+
+/* 点击“查询”按钮后的弹出框 START */
+
+
+/* 框主体 START */
+
+#query-box-specific {
+    position: fixed;
+    left: 4%;
+    top: 16%;
+    width: var(--maxwidth);
+    height: var(--maxheight);
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    color: var(--gray);
+    display: none;
+    z-index: 6;
+}
+
+.inside-container {
+    height: 100%;
+}
+
+.text-info {
+    padding-top: 1.5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    color: rgb(0, 32, 21);
+}
+
+.inside-container::before {
+    content: '';
+    display: block;
+    width: 98.8%;
+    height: 6px;
+    background-color: var(--green);
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+#query-box-specific #station-action-bar .btn {
+    background-color: var(--blue);
+    background-image: linear-gradient(90deg, rgba(16, 121, 16, 0.652) 0%, rgba(8, 110, 8, 0.704) 74%);
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1.1rem;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+#query-box-specific #station-action-bar .btn:hover {
+    background-color: rgb(127, 255, 129);
+}
+
+#query-box-specific #station-action-bar .btn:active {
+    transform: scale(0.95);
+}
+
+#station-info-bar {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#query-box-specific #station-info-bar .small-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: var(--green);
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#query-box-specific #station-info-bar .small-title span {
+    vertical-align: -7%;
+    font-size: 1.2rem;
+}
+
+#query-box-specific #station-info-bar .small-title object {
+    width: 50px;
+}
+
+#query-box-specific #station-info-bar #scheduled-time {
+    font-size: 1.2rem;
+}
+
+#query-box-specific #station-info-bar #path-info {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#query-box-specific #station-action-bar {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#query-box-specific #station-action-bar #ticket-price {
+    color: #00250d;
+    padding: 15px 25px;
+    border: 4px solid rgba(128, 186, 128, 0.229);
+    border-radius: 8px;
+    background-color: white;
+}
+
+#query-box-specific #station-action-bar #ticket-price span {
+    vertical-align: bottom;
+}
+
+#query-box-specific #station-action-bar #ticket-price span:first-child {
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+#query-box-specific #station-action-bar #ticket-price span:last-child {
+    color: rgb(188, 162, 12);
+    font-weight: bold;
+}
+
+#query-box-specific #station-action-bar #buy-ticket {
+    margin-top: -5px;
+}
+
+#query-box-specific #station-action-bar #ticket-info {
+    margin-bottom: 15px;
+}
+
+#query-box-specific #middle-line {
+    position: absolute;
+    width: 4px;
+    height: 90%;
+    background-color: var(--green);
+    left: 50%;
+    top: 6%;
+    border-radius: 3px;
+}
+
+#query-box-specific #fold-btn {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+    font-size: 0;
+    opacity: 0.6;
+}
+
+#query-box-specific #fold-btn:hover {
+    opacity: 1;
+}
+
+#query-box-specific #fold-btn img {
+    width: 30px;
+}
+
+#query-box-specific #close-btn {
+    color: white;
+    background-color: rgb(188, 54, 54);
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 0.6rem;
+    cursor: pointer;
+}
+
+#query-box-specific #close-btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* 框主体 END */
+
+/* 下拉菜单 START*/
+.list-wrapper {
+    display: inline-block;
+    width: 194px;
+    height: 30px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    color: #333;
+    background-color: white;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+.color-light-green {
+    color: rgba(32, 149, 32, 0.588);
+    font-weight: bold;
+}
+
+.line-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: 5%;
+    font-size: 12px;
+    color: white;
+    margin-right: 2px;
+    letter-spacing: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    text-indent: 0;
+}
+
+.red-line {
+    background-color: rgb(215, 61, 61);
+}
+
+.blue-line {
+    background-color: rgb(61, 61, 197);
+}
+
+.purple-line {
+    background-color: rgb(155, 72, 232);
+}
+
+.green-line {
+    background-color: rgb(91, 209, 91);
+}
+
+.is-slide-down {
+    transform: rotate(180deg);
+    top: 11.5px !important;
+}
+
+.is-slide-down-title {
+    color: rgb(35, 162, 39);
+    text-shadow: 1px 1px 2px rgb(164, 216, 187);
+}
+
+.list-wrapper .slide-down-icon {
+    width: 17px;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.list-wrapper .list {
+    left: 0;
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    background-color: white;
+    width: 194px;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid green;
+}
+
+#transfer-info.list-wrapper .list {
+    z-index: 2;
+}
+
+#transfer-info .list>li {
+    text-indent: 0.5rem;
+    position: relative;
+}
+
+#transfer-info .list>li>span:nth-child(3) {
+    font-style: italic;
+    position: absolute;
+    right: 2px;
+}
+
+.list-wrapper .fill {
+    background-color: white;
+    width: 194px;
+    height: 7px;
+    margin-top: -4px;
+    border-bottom: 3px solid rgb(3, 89, 3);
+    display: none;
+}
+
+.list-wrapper .sub-list {
+    list-style: none;
+    margin-bottom: 4px;
+    padding-left: 0.8rem;
+}
+
+.list-wrapper .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-left: 0.8rem;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 0.3rem;
+    user-select: none;
+}
+
+.list-wrapper .title>span {
+    text-shadow: none;
+}
+
+.list-wrapper .sub-list .sub-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list-wrapper .sub-list>li:not(.sub-title) {
+    text-indent: 0.7rem;
+    color: rgb(90, 90, 90);
+    font-family: 'Segoe UI';
+}
+
+/* 下拉菜单END */
+
+/* 折叠功能的相关交互样式规则 START */
+.is-fold {
+    transition: all 0.3s;
+    transform: translateX(-100%);
+}
+/* 折叠功能的相关交互样式规则 END */
+
+/* 点击“查询”按钮后的弹出框 END */
+
+/* 点击站点后光标上侧弹出的选择框 START */
+#tip-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    display: none;
+    user-select: none;
+    z-index: 5;
+}
+
+#tip-body {
+    width: 240px;
+    padding: 10px 20px;
+    background: rgba(69, 79, 89, 1);
+    box-shadow: 0 0 6px 1px rgb(0 0 0 / 30%);
+    border-radius: 8px;
+    opacity: 0.95;
+}
+
+#tip-body .tip-name-detail {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    font-size: 16px;
+    background: url(../../img/go.png) no-repeat right center;
+    background-size: 12px 20px;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    float: left;
+}
+
+#tip-body #tip-name {
+    float: left;
+    display: block;
+    width: auto;
+}
+
+#tip-body #route-num {
+    display: block;
+    border-radius: 16px;
+    width: 18px;
+    height: 18px;
+    margin: 20px 0 0 3px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+    float: left;
+}
+
+
+#tip-body .tip-route {
+    overflow: hidden;
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+}
+
+#tip-body .tip-route .tip-route-btn-start {
+    width: 41.95%;
+    float: left;
+    background: url(../../img/star1.png) no-repeat left center;
+    background-size: 22px 28px;
+    border-right: 1px rgba(255, 255, 255, 1) solid;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+#tip-body .tip-route .tip-route-btn-end {
+    width: 33%;
+    float: right;
+    background: url(../../img/end1.png) no-repeat left center;
+    background-size: 22px 28px;
+    margin: 10px 0 0 26px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+#tip-footer {
+    height: 10px;
+    background: url(../../img/tipfooter.png) no-repeat center top;
+    background-size: 21px 10px;
+}
+
+.startId {
+    background: url(../../img/star2.png) no-repeat center center;
+}
+
+.endId {
+    background: url(../../img/end2.png) no-repeat center center;
+    display: none;
+}
+
+.ident {
+    width: 30px;
+    height:40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-size: 30px 40px;
+    display: none;
+}
+
+
+/* 点击站点后光标上侧的弹出框 END */
+
+/* 点击查看订单后的弹出框 START */
+#order-check-modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    color: var(--gray);
+    border-radius: var(--button--radius);
+    overflow: auto;
+    height: 70vh;
+    background-color: var(--white);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    display: none;
+    z-index: 10;
+}
+
+#order-check-modal-box #order-active-table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+#order-check-modal-box #order-active-table td {
+    border: none;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+#order-check-modal-box #order-active-table object {
+    width: 40px;
+    vertical-align: 2px;
+}
+
+#order-check-modal-box #order-active-table thead {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#order-check-modal-box #order-active-table thead td {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid rgb(2, 60, 2);
+}
+
+#order-check-modal-box #order-active-table tbody td:first-child {
+    font-size: 1.1rem;
+}
+
+#order-check-modal-box #order-active-table tbody td:nth-child(2) {
+    font-size: 1.4rem;
+}
+
+#order-check-modal-box #order-active-table tbody td:nth-child(2) span:last-child {
+    font-weight: bold;
+    color: rgb(177, 116, 36);
+    padding-left: 0.3rem;
+}
+
+#order-check-modal-box #order-active-table tbody td:nth-child(3) {
+    font-style: italic;
+}
+
+
+#order-check-modal-box #order-active-table tbody td:last-child button {
+    color: white;
+    font-size: 1.15rem;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+}
+
+#order-check-modal-box #order-active-table tbody td:last-child button:first-child {
+    background-color: rgb(6, 98, 6);
+}
+
+#order-check-modal-box #order-active-table tbody td:last-child button:last-child {
+    background-color: rgb(156, 64, 36);
+}
+
+#order-check-modal-box #close-btn {
+    color: white;
+    background-color: rgb(188, 54, 54);
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#order-check-modal-box #close-btn:hover {
+    background-color: rgb(175, 21, 21);
+}
+
+/* 点击查看订单后的弹出框 END */
+
+/* 点击线路收藏后的弹出框 START */
+
+#line-collect-modal-box {
+    display: none;
+}
+
+#line-collect-modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    color: var(--gray);
+    border-radius: var(--button--radius);
+    overflow: auto;
+    height: 70vh;
+    background-color: var(--white);
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+#line-collect-modal-box #line-collect-table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 950px;
+}
+
+#line-collect-modal-box #line-collect-table td {
+    border: none;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+#line-collect-modal-box #line-collect-table object {
+    width: 40px;
+    vertical-align: 2px;
+}
+
+#line-collect-modal-box #line-collect-table thead td {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid rgb(2, 60, 2);
+    font-weight: bold;
+}
+
+#line-collect-modal-box #line-collect-table tbody td:first-child {
+    font-size: 1.1rem;
+}
+
+#line-collect-modal-box #line-collect-table tbody td:nth-child(2),
+#line-collect-modal-box #line-collect-table tbody td:nth-child(3),
+#line-collect-modal-box #line-collect-table tbody td:nth-child(5) {
+    font-style: italic;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(1) {
+    width: 235px;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(2) {
+    width: 88px;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(3) {
+    width: 154px;
+}
+
+#line-collect-modal-box #line-collect-table thead td:nth-child(4) {
+    width: 120px;
+    text-align: center;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(5) {
+    width: 161px;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(6) {
+    text-align: left;
+    width: 66px;
+}
+
+#line-collect-modal-box #line-collect-table td:nth-child(7) {
+    width: 111px;
+    text-align: left;
+}
+
+#line-collect-modal-box #line-collect-table thead td:nth-child(6) {
+    text-indent: -6px;
+}
+
+#line-collect-modal-box #line-collect-table thead td:nth-child(7) {
+    text-indent: 14px;
+}
+
+#line-collect-modal-box #line-collect-table tbody td:nth-child(4) {
+    text-align: left;
+}
+
+#line-collect-modal-box #line-collect-table tbody td:nth-child(6) span:last-child {
+    font-weight: bold;
+    color: rgb(183 118 32);
+    padding-left: 0.3rem;
+}
+
+#line-collect-modal-box #close-btn {
+    color: white;
+    background-color: rgb(188, 54, 54);
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+    line-height: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#line-collect-modal-box #close-btn:hover {
+    background-color: rgb(175, 21, 21);
+}
+
+#line-collect-modal-box #line-collect-table #delete-collect {
+    font-size: 1rem;
+    padding: 0.3rem 0.3rem;
+    background-color: rgb(136, 25, 25);
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#line-collect-modal-box #line-collect-table #delete-collect:hover {
+    background-color: rgb(184, 14, 14);
+}
+
+/* 点击线路收藏后的弹出框 END */
+
+/* 点击票价说明后的弹出框  START*/
+#ticket-info-modal-box {
+    width: fit-content;
+    background-color: var(--white);
+    border-radius: var(--button--radius);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -260px;
+    margin-top: -157px;
+    z-index: 100;
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+#ticket-info-modal-box #fare-rules {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: fit-content;
+}
+
+#ticket-info-modal-box #fare-rules .fare-rules-header {
+    font-style: normal;
+}
+
+#ticket-info-modal-box .fare-rules-header::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#ticket-info-modal-box #fare-rules p:first-child {
+    font-size: 1.5rem;
+    font-style: bold;
+    color: rgb(104, 75, 75);
+    line-height: 45px;
+    display: inline-block;
+    width: 112px;
+    color: white;
+    background-color: rgb(126, 25, 25);
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+#ticket-info-modal-box #fare-rules p {
+    padding-bottom: 15px;
+    font-size: 25px;
+    color: rgb(102, 100, 100);
+    font-style: italic;
+}
+
+#ticket-info-modal-box #fare-rules p:first-child::after {
+    height: 100%;
+    vertical-align: middle;
+}
+
+#ticket-info-modal-box #fare-rules p span {
+    color: brown;
+    font-weight: bold;
+}
+
+#ticket-info-modal-box #close-btn {
+    color: white;
+    background-color: rgb(188, 54, 54);
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 0.68rem;
+    cursor: pointer;
+}
+
+#ticket-info-modal-box #close-btn:hover {
+    background-color: rgb(255, 0, 0);
+}
+/* 点击票价说明后的弹出框  END*/
+
+/* 顶部导航栏样式 START */
+.nav-container {
+    position: fixed;
+    width: 100%;
+    height: 3.4rem;
+    background-color: rgba(16, 16, 16, 0.947);
+    display: flex;
+    z-index: 2;
+}
+
+.nav-btn {
+    background: url('../../img/navBtnGreen.png') no-repeat center center;
+    text-decoration: none;
+    color: white;
+    background-size: auto;
+    display: inline-block;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 2.4rem;
+    padding-right: 1.9rem;
+    font-size: 1.1rem;
+    transition: all 0.4s;
+    font-weight: bold;
+    transform: scale(0.82);
+    position: absolute;
+    z-index: 2;
+}
+
+.nav-btn:active {
+    transform: scale(0.79);
+}
+
+.nav-btn:first-child {
+    left: 20px;
+    top: 0;
+}
+
+.nav-btn:first-child:hover, .nav-btn:nth-child(2):hover {
+    background-image: url(../../img/navBtnWhite.png);
+    color: #0c5c39;
+}
+
+.nav-btn:nth-child(2) {
+    left: 154px;
+    top: 0;
+}
+
+.nav-btn:first-child:hover {
+    background-image: url(../../img/navBtnWhite.png);
+    color: #0c5c39;
+}
+
+
+.nav-btn:nth-child(3) {
+    right: 154px;
+    top: 0;
+    color: #0c5c39;
+    text-indent: -14px;
+    background: none;
+}
+
+.nav-btn:nth-child(4) {
+    right: 20px;
+    top: 0;
+    color: #0c5c39;
+    text-indent: -14px;
+    background: none;
+}
+
+.nav-btn:nth-child(3)::after {
+    content: '';
+    display: block;
+    width: 119.14px;
+    height: 51.3px;
+    position: absolute;
+    background: url('../../img/navBtnWhite.png') no-repeat center center;
+    transform: rotate(180deg);
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+.nav-btn:nth-child(4)::after {
+    content: '';
+    display: block;
+    width: 119.14px;
+    height: 51.3px;
+    position: absolute;
+    background: url('../../img/navBtnWhite.png') no-repeat center center;
+    transform: rotate(180deg);
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+.nav-btn:nth-child(3):hover {
+    color: white;
+}
+
+.nav-btn:nth-child(4):hover {
+    color: white;
+}
+
+.nav-btn:nth-child(3):hover::after, .nav-btn:nth-child(4):hover::after {
+    background-image: url(../../img/navBtnGreen.png);
+}
+
+/* 顶部导航栏样式 END */
+
+/* 提示错误消息的模态框 STATT*/
+.err-msg-modal-box {
+    width: 500px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 0.7rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+}
+
+.err-msg-modal-box .container {
+    padding: 1rem 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.err-msg-modal-box p:nth-child(1) {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    border-bottom: 3px solid var(--green);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.15rem;
+}
+
+.err-msg-modal-box p:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.err-msg-modal-box button {
+    border-radius: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 0.4rem 1.5rem;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.err-msg-modal-box button:active {
+    transform: scale(0.95);
+}
+
+/* 提示错误消息的模态框 END*/
+
+/*  提示是否删除订单信息框 START */
+.deleted-order-tip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--green);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: none;
+}
+
+.deleted-order-tip .container {
+    padding: 1rem 1rem;
+    color: var(--gray);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.deleted-order-tip .title {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 3px solid var(--green);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    text-indent: 0.4rem;
+}
+
+.deleted-order-tip .main-content {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.deleted-order-tip button {
+    font-size: 1rem;
+    padding: 0.3rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: var(--green);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.deleted-order-tip button:active {
+    transform: scale(0.95);
+}
+
+.deleted-order-tip .start-station, .deleted-order-tip .end-station {
+    color: rgb(165, 52, 52);
+    font-weight: bold;
+}
+
+/*  提示是否删除订单信息框 END */
+
+/* 退票原因输入框 START */
+.input-refund-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--green);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: none;
+}
+
+.input-refund-info .title {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    text-indent: 0.4rem;
+}
+
+.input-refund-info .main-content {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.input-refund-info button {
+    font-size: 1rem;
+    padding: 0.3rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: var(--green);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.input-refund-info button:active {
+    transform: scale(0.95);
+}
+
+.input-refund-info .container {
+    padding: 1rem 1rem;
+    color: var(--gray);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    background-color: white;
+}
+
+#refund-reason {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.1rem;
+    height: 1.5rem;
+    width: 12rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    outline: none;
+    border: 2px solid var(--green);
+}
+/* 退票原因输入框 END */

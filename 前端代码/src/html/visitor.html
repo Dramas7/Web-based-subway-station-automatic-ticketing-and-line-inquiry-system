@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地铁线路示意图</title>
+    <link rel="stylesheet" href="../css/visitor.css">
+    <script src="../js/visitor.js"></script>
+</head>
+
+<body>
+    <!-- 页面头部 -->
+    <header>
+        <nav class="nav-container">
+            <a href="./commonUserLogin.html" id="common-login-btn" class="nav-btn">乘客登入</a>
+            <a href="./adminLogin.html" id="admin-login-btn" class="nav-btn">管理登入</a>
+        </nav>
+    </header>
+
+    <!-- 主体区域 -->
+    <main>
+        <!-- 地铁线路示意图 -->
+        <div id="svg-container">
+            <!-- 地铁线路示意图 -->
+            <svg id="lineDiagram" height="1587" xmlns:ev="http://www.w3.org/2001/xml-events" width="2245" viewBox="0 0 2245 1587" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- 地铁线路 -->
+                <g id="subway_lines">
+                    <!-- 1号线：红线 -->
+                    <g id="red_line">
+                        <!-- 相邻站点间的线路单元 -->
+                        <g id="red_line_units">
+                            <path fill="#cc0c30" transform="translate(1150.86,1254.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,48.0L.0,48.0L.0,.0z" id="red_line_unit1" fill-rule="nonzero" distance="2" connect="江门站-启超大道"></path>
+                            <path fill="#cc0c30" transform="translate(1150.64,1200.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,48.0L.0,48.0L.0,.0z" id="red_line_unit2" fill-rule="nonzero" distance="2" connect="启超大道-中心南路"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1148.1,1186.5)" stroke="#e54648" stroke-width="1" d="M.0,.0L57.7,.0L57.7,8.0L.0,8.0L.0,.0z" id="red_line_unit3" fill-rule="nonzero" distance="2" connect="中心南路-冈州大道"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1188.6,1145.7)" stroke="#e54648" stroke-width="1" d="M.0,.0L56.0,.0L56.0,8.0L.0,8.0L.0,.0z" id="red_line_unit4" fill-rule="nonzero" distance="2" connect="冈州大道-会城大道"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1231.5,1103.4)" stroke="#e54648" stroke-width="1" d="M.0,.0L56.0,.0L56.0,8.0L.0,8.0L.0,.0z" id="red_line_unit5" fill-rule="nonzero" distance="2" connect="会城大道-龙湾路"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1271.2,1063.6)" stroke="#e54648" stroke-width="1" d="M.0,.0L56.0,.0L56.0,8.0L.0,8.0L.0,.0z" id="red_line_unit6" fill-rule="nonzero" distance="2" connect="龙湾路-白沙大道"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1311.1,1024.0)" stroke="#e54648" stroke-width="1" d="M.0,.0L56.0,.0L56.0,8.0L.0,8.0L.0,.0z" id="red_line_unit7" fill-rule="nonzero" distance="2" connect="白沙大道-华园路"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1350.1,983.6)" stroke="#e54648" stroke-width="1" d="M.0,.0L56.0,.0L56.0,8.0L.0,8.0L.0,.0z" id="red_line_unit8" fill-rule="nonzero" distance="2" connect="华园路-市政府"></path>
+                            <path fill="#cc0c30" transform="translate(1382.34,888.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit9" fill-rule="nonzero" distance="2" connect="市政府-五邑大学"></path>
+                            <path fill="#cc0c30" transform="translate(1382.12,834.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit10" fill-rule="nonzero" distance="2" connect="五邑大学-龙溪"></path>
+                            <path fill="#cc0c30" transform="translate(1382.34,768.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit11" fill-rule="nonzero" distance="2" connect="龙溪-北环路"></path>
+                            <path fill="#cc0c30" transform="translate(1382.34,712.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit12" fill-rule="nonzero" distance="2" connect="北环路-水厂"></path>
+                            <path fill="#cc0c30" transform="translate(1382.34,659.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit13" fill-rule="nonzero" distance="2" connect="水厂-周郡"></path>
+                            <path fill="#cc0c30" transform="translate(1382.43,605.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,50.0L.0,50.0L.0,.0z" id="red_line_unit14" fill-rule="nonzero" distance="2" connect="周郡-大林"></path>
+                            <path fill="#cc0c30" transform="translate(1324.18,601.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L58.0,.0L58.0,8.0L.0,8.0L.0,.0z" id="red_line_unit15" fill-rule="nonzero" distance="2" connect="大林-华盛路"></path>
+                            <path fill="#cc0c30" transform="translate(1263.18,601.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L58.0,.0L58.0,8.0L.0,8.0L.0,.0z" id="red_line_unit16" fill-rule="nonzero" distance="2" connect="华盛路-滨江"></path>
+                            <path fill="#cc0c30" transform="translate(1193.18,601.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L58.0,.0L58.0,8.0L.0,8.0L.0,.0z" id="red_line_unit17" fill-rule="nonzero" distance="2" connect="滨江-棠下"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,-0.71,0.71,0.71,1143.2,567.1)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,60.0L.0,60.0L.0,.0z" id="red_line_unit18" fill-rule="nonzero" distance="2" connect="棠下-竹溪"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,0.71,-0.71,0.71,1105.8,516.5)" stroke="#e54648" stroke-width="1" d="M.0,.0L58.0,.0L58.0,8.0L.0,8.0L.0,.0z" id="red_line_unit19" fill-rule="nonzero" distance="2" connect="竹溪-雅瑶"></path>
+                            <path fill="#cc0c30" transform="translate(1099.96,456.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,58.0L.0,58.0L.0,.0z" id="red_line_unit20" fill-rule="nonzero" distance="2" connect="雅瑶-月光"></path>
+                            <path fill="#cc0c30" transform="translate(1099.89,392.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L8.0,.0L8.0,58.0L.0,58.0L.0,.0z" id="red_line_unit21" fill-rule="nonzero" distance="2" connect="月光-鹤山东站"></path>
+                            <path fill="#cc0c30" transform="translate(1029.18,388.51)" stroke="#e54648" stroke-width="1" d="M.0,.0L66.0,.0L66.0,8.0L.0,8.0L.0,.0z" id="red_line_unit22" fill-rule="nonzero" distance="2" connect="鹤山东站-古桥"></path>
+                            <path fill="#cc0c30" transform="translate(960.18,388.86)" stroke="#e54648" stroke-width="1" d="M.0,.0L66.0,.0L66.0,8.0L.0,8.0L.0,.0z" id="red_line_unit23" fill-rule="nonzero" distance="2" connect="古桥-鹤山行政中心"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,0.71,-0.71,0.71,908.0,335.7)" stroke="#e54648" stroke-width="1" d="M.0,.0L69.6,.0L69.6,8.0L.0,8.0L.0,.0z" id="red_line_unit24" fill-rule="nonzero" distance="2" connect="鹤山行政中心-沙坪"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,0.71,-0.71,0.71,855.8,282.5)" stroke="#e54648" stroke-width="1" d="M.0,.0L69.6,.0L69.6,8.0L.0,8.0L.0,.0z" id="red_line_unit25" fill-rule="nonzero" distance="2" connect="沙坪-新城路"></path>
+                            <path fill="#cc0c30" transform="matrix(0.71,0.71,-0.71,0.71,804.4,231.1)" stroke="#e54648" stroke-width="1" d="M.0,.0L69.6,.0L69.6,8.0L.0,8.0L.0,.0z" id="red_line_unit26" fill-rule="nonzero" distance="2" connect="新城路-古劳水乡"></path>
+                        </g>
+                    </g>
+
+                    <!-- 2号线：蓝线 -->
+                    <g id="blue_line">
+                        <!-- 相邻站点间的线路单元 -->
+                        <g id="blue_line_units">
+                            <path fill="#2e57d0" transform="translate(1166.58,1298.73)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L454.6,.0L454.6,8.0L.0,8.0L.0,.0z" id="blue_line_unit1" fill-rule="nonzero" distance="15" connect="江门站-礼东"></path>
+                            <path fill="#2e57d0" transform="translate(1617.18,1200.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,96.0L.0,96.0L.0,.0z" id="blue_line_unit2" fill-rule="nonzero" distance="2" connect="礼东-东海路"></path>
+                            <path fill="#2e57d0" transform="translate(1616.02,1140.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,45.3L.0,45.3L.0,.0z" id="blue_line_unit3" fill-rule="nonzero" distance="2" connect="东海路-江海"></path>
+                            <path fill="#2e57d0" transform="translate(1616.02,1086.44)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,45.3L.0,45.3L.0,.0z" id="blue_line_unit4" fill-rule="nonzero" distance="2" connect="江海-江门东站"></path>
+                            <path fill="#2e57d0" transform="translate(1616.02,1032.07)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,45.3L.0,45.3L.0,.0z" id="blue_line_unit5" fill-rule="nonzero" distance="2" connect="江门东站-新南里"></path>
+                            <g id="blue_line_unit6" distance="2" connect="新南里-市政府">
+                                <path fill="#2e57d0" transform="translate(1576.38,941.51)" stroke="#1f53ba" stroke-width="1" d="M.0,7.6L-33.6,7.6L-33.6,.0L.0,.0C26.3,.0,47.6,21.3,47.6,47.6L47.6,87.6L39.6,87.6L39.6,47.6C39.6,26.8,20.8,7.6,.0,7.6z" id="blue_line_unit6_1" fill-rule="nonzero"></path>
+                                <path fill="#2e57d0" transform="translate(1401.18,941.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L153.5,.0L153.5,8.0L.0,8.0L.0,.0z" id="blue_line_unit6_2" fill-rule="nonzero"></path>
+                            </g>
+                            <g id="blue_line_unit7" distance="2" connect="市政府-东方广场">
+                                <path fill="#2e57d0" transform="translate(1271.15,941.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L100.2,.0L100.2,8.0L.0,8.0L.0,.0z" id="blue_line_unit7_1" fill-rule="nonzero"></path>
+                                <path fill="#2e57d0" transform="matrix(-1.00,0.00,0.00,-1.00,1234.6,949.8)" stroke="#1f53ba" stroke-width="1" d="M.0,7.6L-37.8,7.6L-37.8,.0L.0,.0C26.5,.0,48.0,21.5,48.0,48.0L48.0,115.0L40.0,115.0L40.0,48.0C40.0,27.0,21.0,7.6,.0,7.6z" id="blue_line_unit7_2" fill-rule="nonzero"></path>
+                            </g>
+                            <path fill="#2e57d0" transform="matrix(0.87,0.50,-0.50,0.87,1199.0,793.5)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,27.6L.0,27.6L.0,.0z" id="blue_line_unit8" fill-rule="nonzero" distance="2" connect="东方广场-建设二路"></path>
+                            <path fill="#2e57d0" transform="matrix(0.87,0.50,-0.50,0.87,1218.4,760.5)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,27.6L.0,27.6L.0,.0z" id="blue_line_unit9" fill-rule="nonzero" distance="2" connect="建设二路-汽车站"></path>
+                            <path fill="#2e57d0" transform="matrix(0.87,0.50,-0.50,0.87,1255.6,694.7)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,60.9L.0,60.9L.0,.0z" id="blue_line_unit10" fill-rule="nonzero" distance="2" connect="汽车站-潮江里"></path>
+                            <path fill="#2e57d0" transform="translate(1252.55,659.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,27.6L.0,27.6L.0,.0z" id="blue_line_unit11" fill-rule="nonzero" distance="2" connect="潮江里-新南路"></path>
+                            <path fill="#2e57d0" transform="translate(1252.78,618.51)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,37.0L.0,37.0L.0,.0z" id="blue_line_unit12" fill-rule="nonzero" distance="2" connect="新南路-滨江"></path>
+                            <path fill="#2e57d0" transform="matrix(0.00,-1.00,1.00,0.00,1252.8,556.9)" stroke="#1f53ba" stroke-width="1" d="M.0,7.6L-37.8,7.6L-37.8,.0L.0,.0C13.2,.0,24.0,10.7,24.0,24.0L24.0,64.0L16.0,64.0L16.0,24.0C16.0,16.3,7.7,7.6,.0,7.6z" id="blue_line_unit13" fill-rule="nonzero" distance="2" connect="滨江-滨江南"></path>
+                            <path fill="#2e57d0" transform="translate(1320.18,480.72)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,46.7L.0,46.7L.0,.0z" id="blue_line_unit14" fill-rule="nonzero" distance="2" connect="滨江南-仙溪"></path>
+                            <path fill="#2e57d0" transform="translate(1320.18,433.18)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,46.7L.0,46.7L.0,.0z" id="blue_line_unit15" fill-rule="nonzero" distance="2" connect="仙溪-虎岭"></path>
+                            <path fill="#2e57d0" transform="translate(1320.59,383.21)" stroke="#1f53ba" stroke-width="1" d="M.0,.0L8.0,.0L8.0,46.7L.0,46.7L.0,.0z" id="blue_line_unit16" fill-rule="nonzero" distance="2" connect="虎岭-滨江尾"></path>
+                        </g>
+                    </g>
+
+                    <!-- 3号线：紫线 -->
+                    <g id="purple_line">
+                        <!-- 相邻站点间的线路单元 -->
+                        <g id="purple_line_units">
+                            <g id="purple_line_unit1" distance="2" connect="司前-金泽路">
+                                <path fill="#7030a0" transform="matrix(0.00,-1.00,1.00,0.00,357.2,1220.1)" stroke="#8b13be" stroke-width="1" d="M.0,7.6L.0,.0C16.6,.0,30.0,13.4,30.0,30.0L22.0,30.0C22.0,17.8,12.2,7.6,.0,7.6z" id="purple_line_unit1_1" fill-rule="nonzero"></path>
+                                <path fill="#7030a0" transform="translate(385.40,1190.11)" stroke="#8b13be" stroke-width="1" d="M.0,.0L187.8,.0L187.8,8.0L.0,8.0L.0,.0z" id="purple_line_unit1_2" fill-rule="nonzero"></path>
+                            </g>
+                            <path fill="#7030a0" transform="translate(581.18,1191.13)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit2" fill-rule="nonzero" distance="2" connect="金泽路-大泽"></path>
+                            <path fill="#7030a0" transform="translate(661.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit3" fill-rule="nonzero" distance="2" connect="大泽-五和"></path>
+                            <path fill="#7030a0" transform="translate(741.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit4" fill-rule="nonzero" distance="2" connect="五和-同仁"></path>
+                            <path fill="#7030a0" transform="translate(821.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit5" fill-rule="nonzero" distance="2" connect="同仁-工业园"></path>
+                            <path fill="#7030a0" transform="translate(901.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit6" fill-rule="nonzero" distance="2" connect="工业园-繁华路"></path>
+                            <path fill="#7030a0" transform="translate(981.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit7" fill-rule="nonzero" distance="2" connect="繁华路-三和大道"></path>
+                            <path fill="#7030a0" transform="translate(1068.18,1190.51)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit8" fill-rule="nonzero" distance="2" connect="三和大道-中心南路"></path>
+                            <path fill="#7030a0" transform="translate(1165.78,1190.84)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit9" fill-rule="nonzero" distance="2" connect="中心南路-侨兴路"></path>
+                            <path fill="#7030a0" transform="translate(1246.18,1190.24)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit10" fill-rule="nonzero" distance="2" connect="侨兴路-汇源坊"></path>
+                            <path fill="#7030a0" transform="translate(1325.35,1190.82)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit11" fill-rule="nonzero" distance="2" connect="汇源坊-断河"></path>
+                            <path fill="#7030a0" transform="translate(1405.18,1190.82)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit12" fill-rule="nonzero" distance="2" connect="断河-礼乐"></path>
+                            <path fill="#7030a0" transform="translate(1485.18,1190.82)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit13" fill-rule="nonzero" distance="2" connect="礼乐-纳谷"></path>
+                            <path fill="#7030a0" transform="translate(1566.32,1191.20)" stroke="#8b13be" stroke-width="1" d="M.0,.0L38.6,.0L38.6,8.0L.0,8.0L.0,.0z" id="purple_line_unit14" fill-rule="nonzero" distance="2" connect="纳谷-东海路"></path>
+                            <path fill="#7030a0" transform="translate(1633.18,1189.87)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit15" fill-rule="nonzero" distance="2" connect="东海路-广丰"></path>
+                            <path fill="#7030a0" transform="translate(1713.18,1189.85)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit16" fill-rule="nonzero" distance="2" connect="广丰-高新区"></path>
+                            <path fill="#7030a0" transform="translate(1793.59,1189.87)" stroke="#8b13be" stroke-width="1" d="M.0,.0L72.0,.0L72.0,8.0L.0,8.0L.0,.0z" id="purple_line_unit17" fill-rule="nonzero" distance="2" connect="高新区-兴宁"></path>
+                            <path fill="#7030a0" transform="matrix(0.71,0.71,-0.71,0.71,1905.3,1152.7)" stroke="#8b13be" stroke-width="1" d="M.0,.0L8.0,.0L8.0,55.6L.0,55.6L.0,.0z" id="purple_line_unit18" fill-rule="nonzero" distance="2" connect="兴宁-横海"></path>
+                            <path fill="#7030a0" transform="translate(1902.99,1091.44)" stroke="#8b13be" stroke-width="1" d="M.0,.0L8.0,.0L8.0,57.1L.0,57.1L.0,.0z" id="purple_line_unit19" fill-rule="nonzero" distance="2" connect="横海-科宛路"></path>
+                            <path fill="#7030a0" transform="translate(1902.57,1026.16)" stroke="#8b13be" stroke-width="1" d="M.0,.0L8.0,.0L8.0,57.1L.0,57.1L.0,.0z" id="purple_line_unit20" fill-rule="nonzero" distance="2" connect="科宛路-金瓯路"></path>
+                            <path fill="#7030a0" transform="translate(1902.57,962.27)" stroke="#8b13be" stroke-width="1" d="M.0,.0L8.0,.0L8.0,57.1L.0,57.1L.0,.0z" id="purple_line_unit21" fill-rule="nonzero" distance="2" connect="金瓯路-江海站"></path>
+                            <path fill="#7030a0" transform="matrix(0.71,-0.71,0.71,0.71,1863.5,920.2)" stroke="#8b13be" stroke-width="1" d="M.0,.0L8.0,.0L8.0,57.1L.0,57.1L.0,.0z" id="purple_line_unit22" fill-rule="nonzero" distance="2" connect="江海站-外海"></path>
+                        </g>
+                    </g>
+
+                    <!-- 4号线：绿线 -->
+                    <g id="green_line">
+                        <!-- 相邻站点间的线路单元 -->
+                        <g id="green_line_units">
+                            <g id="green_line_unit1" distance="2" connect="共和-杜阮">
+                                <path fill="#42c181" transform="translate(417.18,820.51)" stroke="#209058" stroke-width="1" d="M.0,.0L276.0,.0L276.0,8.0L.0,8.0L.0,.0z" id="green_line_unit1_1" fill-rule="nonzero"></path>
+                                <path fill="#42c181" transform="matrix(0.71,-0.71,0.71,0.71,686.0,823.4)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit1_2" fill-rule="nonzero"></path>
+                            </g>
+                            <path fill="#42c181" transform="translate(740.18,773.89)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit2" fill-rule="nonzero" distance="2" connect="杜阮-松岭"></path>
+                            <path fill="#42c181" transform="translate(818.18,773.89)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit3" fill-rule="nonzero" distance="2" connect="松岭-龙安"></path>
+                            <path fill="#42c181" transform="translate(896.18,774.56)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit4" fill-rule="nonzero" distance="2" connect="龙安-松翠"></path>
+                            <path fill="#42c181" transform="translate(973.18,774.56)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit5" fill-rule="nonzero" distance="2" connect="松翠-南户"></path>
+                            <path fill="#42c181" transform="matrix(0.71,0.71,-0.71,0.71,1054.0,776.0)" stroke="#209058" stroke-width="1" d="M.0,.0L70.0,.0L70.0,8.0L.0,8.0L.0,.0z" id="green_line_unit6" fill-rule="nonzero" distance="2" connect="南户-蓬江站"></path>
+                            <path fill="#42c181" transform="translate(1103.56,822.51)" stroke="#209058" stroke-width="1" d="M.0,.0L71.8,.0L71.8,8.0L.0,8.0L.0,.0z" id="green_line_unit7" fill-rule="nonzero" distance="2" connect="蓬江站-东方广场"></path>
+                            <path fill="#42c181" transform="translate(1204.60,823.11)" stroke="#209058" stroke-width="1" d="M.0,.0L71.8,.0L71.8,8.0L.0,8.0L.0,.0z" id="green_line_unit8" fill-rule="nonzero" distance="2" connect="东方广场-万达"></path>
+                            <path fill="#42c181" transform="translate(1287.18,823.33)" stroke="#209058" stroke-width="1" d="M.0,.0L83.0,.0L83.0,8.0L.0,8.0L.0,.0z" id="green_line_unit9" fill-rule="nonzero" distance="2" connect="万达-龙溪"></path>
+                            <path fill="#42c181" stroke="#209058" stroke-width="1" transform="matrix(-0.71,0.71,-0.71,-0.71,1449.6,783.6)" d="M.0,.0L69.0,.0L69.0,8.0L.0,8.0L.0,.0z" fill-rule="nonzero" id="green_line_unit10" distance="2" connect="龙溪-潮连"></path>
+                            <path fill="#42c181" stroke="#209058" stroke-width="1" transform="matrix(-0.71,0.71,-0.71,-0.71,1502.0,730.7)" d="M.0,.0L68.6,.0L68.6,8.0L.0,8.0L.0,.0z" fill-rule="nonzero" id="green_line_unit11" distance="2" connect="潮连-荷塘南"></path>
+                            <path fill="#42c181" transform="matrix(0.00,1.00,-1.00,0.00,1505.7,685.7)" stroke="#209058" stroke-width="1" d="M.0,.0L31.8,.0L31.8,8.0L.0,8.0L.0,.0z" id="green_line_unit12" fill-rule="nonzero" distance="2" connect="荷塘南-民兴路"></path>
+                            <path fill="#42c181" transform="matrix(0.00,1.00,-1.00,0.00,1506.4,646.6)" stroke="#209058" stroke-width="1" d="M.0,.0L31.8,.0L31.8,8.0L.0,8.0L.0,.0z" id="green_line_unit13" fill-rule="nonzero" distance="2" connect="民兴路-中兴三路"></path>
+                            <path fill="#42c181" transform="matrix(0.00,-1.00,1.00,0.00,1498.4,601.5)" stroke="#209058" stroke-width="1" d="M.0,7.6L-37.8,7.6L-37.8,.0L.0,.0C.0,.0,.0,.0,.0,.0L.0,40.0L-8.0,40.0L-8.0,.0C-8.0,5.5,-5.5,7.6,.0,7.6z" id="green_line_unit14" fill-rule="nonzero" distance="2" connect="中兴三路-中泰路"></path>
+                            <path fill="#42c181" transform="translate(1542.58,602.73)" stroke="#209058" stroke-width="1" d="M.0,.0L52.0,.0L52.0,8.0L.0,8.0L.0,.0z" id="green_line_unit15" fill-rule="nonzero" distance="2" connect="中泰路-荷塘"></path>
+                        </g>
+                    </g>
+                </g>
+
+                <!-- 综合站点图标 -->
+                <g id="stations_icons">
+                    <g transform="translate(1162.37,1314.86)" id="icon_jiangMenZhan">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(1271.15,618.51)" id="icon_binJiang">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(1122.93,384.51)" id="icon_heShanDongZhan">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(1573.39,1078.22)" id="icon_jiangMenDongZhan">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(345.06,1236.55)" id="icon_siQian">
+                        <path fill="#963900" stroke="#999999" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(1863.50,967.99)" id="icon_jiangHaiZhan">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(421.64,843.53)" id="icon_gongHe">
+                        <path fill="#963900" stroke="#999999" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g transform="translate(1080.03,839.55)" id="icon_pengJiangZhan">
+                        <path fill="#963900" stroke="#ffffff" stroke-width="1" d="M6.0,.0L25.5,.0C28.8,.0,31.5,2.7,31.5,6.0L31.5,24.0C31.5,27.3,28.8,30.0,25.5,30.0L6.0,30.0C2.7,30.0,.0,27.3,.0,24.0L.0,6.0C.0,2.7,2.7,.0,6.0,.0z" fill-rule="nonzero"></path>
+                        <g transform="translate(6.01,4.21)">
+                            <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M6.3,17.2L4.9,19.2C4.9,19.2,-1.1,15.7,.2,9.1C1.5,2.1,7.9,1.3,7.9,1.3C7.9,1.3,7.5,.9,8.0,.4C8.6,-0.2,11.1,-0.1,11.5,.4C11.8,.9,11.5,1.3,11.5,1.3C11.5,1.3,18.2,2.0,19.4,9.1C20.6,16.1,14.4,19.2,14.6,19.2L13.0,17.2C13.0,17.2,18.0,14.6,17.0,9.7C15.8,3.9,11.5,3.4,9.8,3.3C8.0,3.3,3.4,4.3,2.5,9.4C1.5,14.9,6.3,17.2,6.3,17.2z" fill-rule="nonzero"></path>
+                            <path fill="#ffffff" transform="translate(3.27,9.01)" stroke="#ffffff" stroke-width="1" d="M4.5,.0C4.5,.0,3.1,-0.2,3.1,1.4C3.1,3.0,3.1,3.1,3.1,3.3C3.1,3.3,3.1,4.1,4.1,4.2C5.2,4.3,5.6,4.5,5.6,5.5C5.6,6.4,5.6,9.8,5.6,9.8C5.6,9.8,5.8,11.4,3.8,11.6C1.8,11.9,.0,12.2,.0,12.2L.0,13.1L13.1,13.1L13.1,12.2C13.1,12.2,9.1,11.8,8.7,11.6C7.9,11.4,7.1,10.9,7.1,9.8C7.1,8.8,7.1,5.5,7.1,5.5C7.1,5.5,7.0,4.3,8.4,4.2C9.2,4.2,9.6,3.9,9.7,3.3C9.7,2.8,9.7,1.4,9.7,1.4C9.7,1.4,9.8,.0,8.4,.0C6.9,.0,4.5,.0,4.5,.0z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+
+                <!-- 线路起点与终点的标签 -->
+                <g id="red_line_labels">
+                    <g transform="translate(1065.18,1265.04)" id="red_line_label_start">
+                        <path fill="#cc0c30" stroke="#e54648" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">1号线</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(766.47,183.58)" id="red_line_label_end">
+                        <path fill="#cc0c30" stroke="#e54648" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">1号线</tspan>
+                        </text>
+                    </g>
+                </g>
+
+                <!-- 线路起点与终点的标签 -->
+                <g id="blue_line_labels">
+                    <g transform="translate(1218.28,1311.57)" id="blue_line_label_start">
+                        <path fill="#2e57d0" stroke="#1f53ba" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">2号线</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(1288.14,320.07)" id="blue_line_label_end">
+                        <path fill="#2e57d0" stroke="#1f53ba" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">2号线</tspan>
+                        </text>
+                    </g>
+                </g>
+
+                <!-- 线路起点与终点的标签 -->
+                <g id="purple_line_labels">
+                    <g transform="translate(345.06,1146.51)" id="purple_line_label_start">
+                        <path fill="#7030a0" stroke="#8b13be" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">3号线</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(1893.36,879.58)" id="purple_line_label_end">
+                        <path fill="#7030a0" stroke="#8b13be" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">3号线</tspan>
+                        </text>
+                    </g>
+                </g>
+
+                <!-- 线路起点与终点的标签 -->
+                <g id="green_line_labels">
+                    <g transform="translate(309.35,807.58)" id="green_line_label_start">
+                        <path fill="#42c181" stroke="#209058" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">4号线</tspan>
+                        </text>
+                    </g>
+                    <g transform="translate(1617.53,590.30)" id="green_line_label_end">
+                        <path fill="#42c181" stroke="#209058" stroke-width="1" d="M4.8,.0L66.8,.0C69.5,.0,71.6,2.2,71.6,4.8L71.6,22.1C71.6,24.8,69.5,26.9,66.8,26.9L4.8,26.9C2.2,26.9,.0,24.8,.0,22.1L.0,4.8C.0,2.2,2.2,.0,4.8,.0z" fill-rule="nonzero"></path>
+                        <text xml:space="preserve" style="fill: #ffffff; font-family: Arial; font-size: 10pt; font-weight: bold">
+                            <tspan x="17.8" y="17.3">4号线</tspan>
+                        </text>
+                    </g>
+                </g>
+
+                <!-- 1号线（红线）站点 -->
+                <g id="red_line_stations">
+                    <g transform="translate(1140.36,1294.51)" id="jiang_men_zhan_t" class="circle" cx="1155" cy="1303" data-index="0" text="江门站">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_jiangMenZhan_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_jiangMenZhan_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1090" y="1307" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江门站</text>
+                    <circle cx="1154" cy="1248" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="1" text="启超大道" id="qi_chao_da_dao"></circle>
+                    <text x="1083" y="1250" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">启超大道</text>
+                    <g transform="translate(1139.64,1186.51)" id="zhong_xin_nan_lu_t" class="circle" cx="1155" cy="1195" data-index="2" text="中心南路">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_zhongXinNanLu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_zhongXinNanLu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1166" y="1214" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">中心南路</text>
+                    <circle cx="1186" cy="1152" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="3" text="冈州大道" id="gang_zhou_da_dao"></circle>
+                    <text x="1118" y="1153" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">冈州大道</text>
+                    <circle cx="1230" cy="1108" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="4" text="会城大道" id="hui_cheng_da_dao"></circle>
+                    <text x="1159" y="1110" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">会城大道</text>
+                    <circle cx="1270" cy="1069" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="5" text="龙湾路" id="long_wan_lu"></circle>
+                    <text x="1214" y="1071" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">龙湾路</text>
+                    <circle cx="1310" cy="1029" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="6" text="白沙大道" id="bai_sha_da_dao"></circle>
+                    <text x="1241" y="1031" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">白沙大道</text>
+                    <circle cx="1351" cy="989" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="7" text="华园路" id="hua_yuan_lu"></circle>
+                    <text x="1294" y="992" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">华园路</text>
+                    <g transform="translate(1371.34,938.51)" id="shi_zheng_fu_t" class="circle" cx="1386" cy="948" data-index="8" text="市政府">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M14.9,.0L7.5,.0L7.5,.0C3.3,.0,.0,3.6,.0,8.0C.0,12.4,3.3,16.0,7.5,16.0L14.9,16.0" id="blue_line_shiZhengFu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(14.92,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,14.9,3.6,14.9,8.0C14.9,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_shiZhengFu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1397" y="967" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">市政府</text>
+                    <circle cx="1386" cy="892" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="9" text="五邑大学" id="wu_yi_da_xue"></circle>
+                    <text x="1315" y="893" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">五邑大学</text>
+                    <g transform="translate(1371.12,819.51)" id="long_xi_t" class="circle" cx="1386" cy="829" data-index="10" text="龙溪">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_longXi_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_longXi_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1396" y="848" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">龙溪</text>
+                    <circle cx="1386" cy="762" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="11" text="北环路" id="bei_huan_lu"></circle>
+                    <text x="1402" y="768" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">北环路</text>
+                    <circle cx="1386" cy="709" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="12" text="水厂" id="shui_chang"></circle>
+                    <text x="1410" y="714" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">水厂</text>
+                    <circle cx="1386" cy="654" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="13" text="周郡" id="zhou_jun"></circle>
+                    <text x="1410" y="659" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">周郡</text>
+                    <circle cx="1385" cy="605" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="14" text="大林" id="da_lin"></circle>
+                    <text x="1376" y="585" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">大林</text>
+                    <circle cx="1323" cy="605" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="15" text="华盛路" id="hua_sheng_lu"></circle>
+                    <text x="1308" y="585" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">华盛路</text>
+                    <g transform="translate(1249.18,590.30)" id="bin_jiang_t" class="circle" cx="1256" cy="600" data-index="16" text="滨江">
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,0.0)" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_binJiang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,15.0)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_binJiang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1218" y="623" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">滨江</text>
+                    <circle cx="1192" cy="605" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="17" text="棠下" id="tang_xia"></circle>
+                    <text x="1183" y="585" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">棠下</text>
+                    <circle cx="1146" cy="563" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="18" text="竹溪" id="zhu_xi"></circle>
+                    <text x="1103" y="565" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">竹溪</text>
+                    <circle cx="1103" cy="519" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="19" text="雅瑶" id="ya_yao"></circle>
+                    <text x="1059" y="520" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">雅瑶</text>
+                    <circle cx="1103" cy="456" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="20" text="月光" id="yue_guang"></circle>
+                    <text x="1060" y="458" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">月光</text>
+                    <circle cx="1102" cy="392" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="21" text="鹤山东站" id="he_shan_dong_zhan"></circle>
+                    <text x="1080" y="372" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">鹤山东站</text>
+                    <circle cx="1028" cy="392" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="22" text="古桥" id="gu_qiao"></circle>
+                    <text x="1021" y="372" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">古桥</text>
+                    <circle cx="959" cy="391" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="23" text="鹤山行政中心" id="he_shan_xing_zheng_zhong_xin"></circle>
+                    <text x="923" y="421" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">鹤山行政中心</text>
+                    <circle cx="904" cy="338" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="24" text="沙坪" id="sha_ping"></circle>
+                    <text x="861" y="341" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">沙坪</text>
+                    <circle cx="851" cy="286" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="25" text="新城路" id="xin_cheng_lu"></circle>
+                    <text x="795" y="287" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">新城路</text>
+                    <circle cx="801" cy="233" fill="#fff" stroke="#e54648" r="8" stroke-width="3" class="circle" data-index="26" text="古劳水乡" id="gu_lao_shui_xiang"></circle>
+                    <text x="733" y="234" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">古劳水乡</text>
+                </g>
+                <!-- 2号线（蓝线）站点 -->
+                <g id="blue_line_stations">
+                    <g transform="translate(1140.36,1294.51)" id="jiang_men_zhan_t class="circle" cx="1155" cy="1303" data-index="0" text="江门站">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_jiangMenZhan_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_jiangMenZhan_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1090" y="1307" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江门站</text>
+                    <circle cx="1620" cy="1300" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="27" text="礼东" id="li_dong"></circle>
+                    <text x="1612" y="1330" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">礼东</text>
+                    <g transform="translate(1605.02,1186.51)" id="dong_hai_lu_t" class="circle" cx="1619" cy="1196" data-index="28" text="东海路">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongHaiLu_1"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongHaiLu_2"></path>
+                    </g>
+                    <text x="1631" y="1215" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东海路</text>
+                    <circle cx="1620" cy="1135" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="29" text="江海" id="jiang_hai"></circle>
+                    <text x="1645" y="1139" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江海</text>
+                    <circle cx="1620" cy="1086" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="30" text="江门东站" id="jiang_men_dong_zhan"></circle>
+                    <text x="1645" y="1091" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江门东站</text>
+                    <circle cx="1620" cy="1035" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="31" text="新南里" id="xin_nan_li"></circle>
+                    <text x="1645" y="1040" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">新南里</text>
+                    <g transform="translate(1371.34,938.51)" id="shi_zheng_fu_t" class="circle" cx="1386" cy="948" data-index="8" text="市政府">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M14.9,.0L7.5,.0L7.5,.0C3.3,.0,.0,3.6,.0,8.0C.0,12.4,3.3,16.0,7.5,16.0L14.9,16.0" id="blue_line_shiZhengFu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(14.92,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,14.9,3.6,14.9,8.0C14.9,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_shiZhengFu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1397" y="967" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">市政府</text>
+                    <g transform="translate(1175.40,818.51)" id="dong_fang_guang_chang_t" class="circle" cx="1189" cy="828" data-index="32" text="东方广场">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongFangGuangChang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongFangGuangChang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1201" y="847" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东方广场</text>
+                    <circle cx="1203" cy="792" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="33" text="建设二路" id="jian_she_er_lu"></circle>
+                    <text x="1132" y="795" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">建设二路</text>
+                    <circle cx="1224" cy="755" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="34" text="汽车站" id="qi_che_zhan"></circle>
+                    <text x="1168" y="756" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">汽车站</text>
+                    <circle cx="1256" cy="695" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="35" text="潮江里" id="chao_jiang_li"></circle>
+                    <text x="1199" y="697" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">潮江里</text>
+                    <circle cx="1256" cy="659" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="36" text="新南路" id="xin_nan_lu"></circle>
+                    <text x="1199" y="661" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">新南路</text>
+                    <g transform="translate(1249.18,590.30)" id="bin_jiang_t" class="circle" cx="1256" cy="600" data-index="16" text="滨江">
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,0.0)" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_binJiang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,15.0)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_binJiang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1218" y="623" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">滨江</text>
+                    <circle cx="1323" cy="535" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="37" text="滨江南" id="bin_jiang_nan"></circle>
+                    <text x="1347" y="540" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">滨江南</text>
+                    <circle cx="1323" cy="484" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="38" text="仙溪" id="xian_xi"></circle>
+                    <text x="1349" y="489" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">仙溪</text>
+                    <circle cx="1324" cy="433" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="39" text="虎岭" id="hu_ling"></circle>
+                    <text x="1349" y="437" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">虎岭</text>
+                    <circle cx="1324" cy="383" fill="#fff" stroke="#1f53ba" r="8" stroke-width="3" class="circle" data-index="40" text="滨江尾" id="bin_jiang_wei"></circle>
+                    <text x="1348" y="387" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">滨江尾</text>
+                </g>
+                <!-- 3号线（紫线）站点 -->
+                <g id="purple_line_stations">
+                    <circle cx="359" cy="1220" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="41" text="司前" id="si_qian"></circle>
+                    <text x="318" y="1220" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">司前</text>
+                    <circle cx="580" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="42" text="金泽路" id="jin_ze_lu"></circle>
+                    <text x="564" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">金泽路</text>
+                    <circle cx="659" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="43" text="大泽" id="da_ze"></circle>
+                    <text x="650" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">大泽</text>
+                    <circle cx="740" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="44" text="五和" id="wu_he"></circle>
+                    <text x="731" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">五和</text>
+                    <circle cx="820" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="45" text="同仁" id="tong_ren"></circle>
+                    <text x="812" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">同仁</text>
+                    <circle cx="900" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="46" text="工业园" id="gong_ye_yuan"></circle>
+                    <text x="884" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">工业园</text>
+                    <circle cx="980" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="47" text="繁华路" id="fan_hua_lu"></circle>
+                    <text x="964" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">繁华路</text>
+                    <circle cx="1060" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="48" text="三和大道" id="san_he_da_dao"></circle>
+                    <text x="1037" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">三和大道</text>
+                    <g transform="translate(1139.64,1186.51)" id="zhong_xin_nan_lu_t" class="circle" cx="1155" cy="1195" data-index="2" text="中心南路">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_zhongXinNanLu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_zhongXinNanLu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1166" y="1214" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">中心南路</text>
+                    <circle cx="1238" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="49" text="侨兴路" id="qiao_xing_lu"></circle>
+                    <text x="1222" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">侨兴路</text>
+                    <circle cx="1318" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="50" text="汇源坊" id="hui_yuan_fang"></circle>
+                    <text x="1302" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">汇源坊</text>
+                    <circle cx="1397" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="51" text="断河" id="duan_he"></circle>
+                    <text x="1388" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">断河</text>
+                    <circle cx="1477" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="52" text="礼乐" id="li_le"></circle>
+                    <text x="1467" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">礼乐</text>
+                    <circle cx="1558" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="53" text="纳谷" id="na_gu"></circle>
+                    <text x="1547" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">纳谷</text>
+                    <g transform="translate(1605.02,1186.51)" id="dong_hai_lu_t" class="circle" cx="1619" cy="1196" data-index="28" text="东海路">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongHaiLu_1"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongHaiLu_2"></path>
+                    </g>
+                    <text x="1631" y="1215" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东海路</text>
+                    <circle cx="1705" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="54" text="广丰" id="guang_feng"></circle>
+                    <text x="1695" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">广丰</text>
+                    <circle cx="1785" cy="1194" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="55" text="高新区" id="gao_xin_qu"></circle>
+                    <text x="1769" y="1173" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">高新区</text>
+                    <circle cx="1871" cy="1191" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="56" text="兴宁" id="xing_ning"></circle>
+                    <text x="1862" y="1172" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">兴宁</text>
+                    <circle cx="1906" cy="1153" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="57" text="横海" id="heng_hai"></circle>
+                    <text x="1930" y="1159" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">横海</text>
+                    <circle cx="1906" cy="1091" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="58" text="科宛路" id="ke_wan_lu"></circle>
+                    <text x="1930" y="1096" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">科宛路</text>
+                    <circle cx="1906" cy="1026" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="59" text="金瓯路" id="jin_ou_lu"></circle>
+                    <text x="1930" y="1030" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">金瓯路</text>
+                    <circle cx="1906" cy="962" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="60" text="江海站" id="jiang_hai_zhan"></circle>
+                    <text x="1930" y="966" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江海站</text>
+                    <circle cx="1865" cy="917" fill="#fff" stroke="#8b13be" r="8" stroke-width="3" class="circle" data-index="61" text="外海" id="wai_hai"></circle>
+                    <text x="1856" y="897" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">外海</text>
+                </g>
+                <!-- 4号线（绿线）站点 -->
+                <g id="green_line_stations">
+                    <circle cx="417" cy="823" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="62" text="共和" id="gong_he"></circle>
+                    <text x="407" y="803" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">共和</text>
+                    <circle cx="740" cy="777" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="63" text="杜阮" id="du_ruan"></circle>
+                    <text x="730" y="757" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">杜阮</text>
+                    <circle cx="817" cy="777" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="64" text="松岭" id="song_ling"></circle>
+                    <text x="808" y="757" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">松岭</text>
+                    <circle cx="895" cy="777" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="65" text="龙安" id="long_an"></circle>
+                    <text x="886" y="757" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">龙安</text>
+                    <circle cx="972" cy="777" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="66" text="松翠" id="song_cui"></circle>
+                    <text x="963" y="757" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">松翠</text>
+                    <circle cx="1051" cy="777" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="67" text="南户" id="nan_hu"></circle>
+                    <text x="1042" y="757" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">南户</text>
+                    <circle cx="1102" cy="826" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="68" text="蓬江站" id="peng_jiang_zhan"></circle>
+                    <text x="1086" y="806" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">蓬江站</text>
+                    <g transform="translate(1175.40,818.51)" id="dong_fang_guang_chang_t" class="circle" cx="1189" cy="828" data-index="32" text="东方广场">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongFangGuangChang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongFangGuangChang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1201" y="847" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东方广场</text>
+                    <circle cx="1284" cy="827" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="69" text="万达" id="wan_da"></circle>
+                    <text x="1275" y="855" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">万达</text>
+                    <g transform="translate(1371.12,819.51)" id="long_xi_t" class="circle" cx="1386" cy="829" data-index="10" text="龙溪">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_longXi_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_longXi_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1396" y="848" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">龙溪</text>
+                    <circle cx="1451" cy="775" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="70" text="潮连" id="chao_lian"></circle>
+                    <text x="1476" y="780" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">潮连</text>
+                    <circle cx="1500" cy="723" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="71" text="荷塘南" id="he_tang_nan"></circle>
+                    <text x="1524" y="728" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">荷塘南</text>
+                    <circle cx="1501" cy="685" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="72" text="民兴路" id="min_xing_lu"></circle>
+                    <text x="1526" y="690" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">民兴路</text>
+                    <circle cx="1502" cy="646" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="73" text="中兴三路" id="zhong_xing_san_lu"></circle>
+                    <text x="1527" y="651" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">中兴三路</text>
+                    <circle cx="1537" cy="606" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="74" text="中泰路" id="zhong_tai_lu"></circle>
+                    <text x="1522" y="586" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">中泰路</text>
+                    <circle cx="1594" cy="606" fill="#fff" stroke="#209058" r="8" stroke-width="3" class="circle" data-index="75" text="荷塘" id="he_tang"></circle>
+                    <text x="1585" y="586" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">荷塘</text>
+                </g>
+
+                <!-- 中转站 -->
+                <g id="transfer_stations">
+                    <g transform="translate(1140.36,1294.51)" id="red_blue_line_jiangMenZhan" class="circle" cx="1155" cy="1303">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_jiangMenZhan_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_jiangMenZhan_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1090" y="1307" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">江门站</text>
+                    <g transform="translate(1139.64,1186.51)" id="red_purple_line_zhongXinNanLu" class="circle" cx="1155" cy="1195">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_zhongXinNanLu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_zhongXinNanLu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1166" y="1214" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">中心南路</text>
+                    <g transform="translate(1371.34,938.51)" id="red_blue_line_shiZhengFu" class="circle" cx="1386" cy="948">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M14.9,.0L7.5,.0L7.5,.0C3.3,.0,.0,3.6,.0,8.0C.0,12.4,3.3,16.0,7.5,16.0L14.9,16.0" id="blue_line_shiZhengFu_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(14.92,0.00)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,14.9,3.6,14.9,8.0C14.9,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_shiZhengFu_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1397" y="967" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">市政府</text>
+                    <g transform="translate(1371.12,819.51)" id="red_green_line_longXi" class="circle" cx="1386" cy="829">
+                        <path fill="#ffffff" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_longXi_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_longXi_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1396" y="848" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">龙溪</text>
+                    <g transform="translate(1249.18,590.30)" id="red_blue_line_binJiang" class="circle" cx="1256" cy="600">
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,0.0)" stroke="#e54648" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="red_line_binJiang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="matrix(0.00,1.00,-1.00,0.00,16.0,15.0)" stroke="#1f53ba" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="red_line_binJiang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1218" y="623" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">滨江</text>
+                    <g transform="translate(1605.02,1186.51)" id="blue_purple_line_dongHaiLu" class="circle" cx="1619" cy="1196">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongHaiLu_1"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#8b13be" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongHaiLu_2"></path>
+                    </g>
+                    <text x="1631" y="1215" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东海路</text>
+                    <g transform="translate(1175.40,818.51)" id="blue_green_line_dongFangGuangChang" class="circle" cx="1189" cy="828">
+                        <path fill="#ffffff" stroke="#1f53ba" stroke-width="3" d="M15.0,.0L7.5,.0L7.5,.0C3.4,.0,.0,3.6,.0,8.0C.0,12.4,3.4,16.0,7.5,16.0L15.0,16.0" id="blue_line_dongFangGuangChang_1" fill-rule="nonzero"></path>
+                        <path fill="#ffffff" transform="translate(15.00,0.00)" stroke="#209058" stroke-width="3" d="M.0,.0L7.5,.0L7.5,.0C11.6,.0,15.0,3.6,15.0,8.0C15.0,12.4,11.6,16.0,7.5,16.0L.0,16.0" id="blue_line_dongFangGuangChang_2" fill-rule="nonzero"></path>
+                    </g>
+                    <text x="1201" y="847" style="fill: rgb(25, 25, 25); font-family: 微软雅黑; font-size: 10pt">东方广场</text>
+                </g>
+            </svg>
+        </div>
+
+        <!-- 侧边固定查询栏简易版 -->
+        <div id="query-box-simple">
+            <div class="title">线路、票价查询</div>
+            <div id="main-area">
+                <div class="start-point point">起点：<input type="text" class="ipt" readonly=""></div>
+                <div class="end-point point">终点：<input type="text" class="ipt" readonly=""></div>
+            </div>
+            <div class="btn-container">
+                <button class="query-btn">查询</button>
+            </div>
+            <img src="../svg/twoWayArrow.svg" alt="双向箭头">
+        </div>
+
+        <!-- 点击查询后的弹出框 -->
+        <div id="query-box-specific">
+            <div class="inside-container clearfix">
+                <!-- 未折叠弹出框的线路信息栏 -->
+                <div id="station-info-bar" class="clearfix">
+                    <div class="grid">
+                        <!-- 起点站——→终点站标题 -->
+                        <div class="small-title"><span>鹤山行政中心</span><object data="../svg/arrowRight.svg"></object><span>中心南路</span></div>
+                        <!-- 途经站点 -->
+                        <div id="station-list" class="list-wrapper line-query">
+                            <img src="../svg/slidedown.svg" class="slide-down-icon">
+                            <!-- 列表标题 -->
+                            <div class="title"><span class="color-light-green">-</span>途经站点<span class="color-light-green">-&gt;</span></div>
+                            <!-- 用于填充标题与列表之间，仅做填充空间用 -->
+                            <div class="fill"></div>
+                            <ul class="list"></ul>
+                        </div>
+                        <!-- 换乘信息 -->
+                        <div id="transfer-info" class="list-wrapper">
+                            <img src="../svg/slidedown.svg" class="slide-down-icon">
+                            <!-- 标题 -->
+                            <div class="title"><span class="color-light-green">-</span>换乘信息<span class="color-light-green">-&gt;</span></div>
+                            <!-- 用于填充标题与列表之间的元素，仅做填充空间用 -->
+                            <div class="fill"></div>
+                            <ul class="list"></ul>
+                        </div>
+                        <!-- 预计时间 -->
+                        <div id="scheduled-time">预计时间：<span class="text-info">3min</span></div>
+                        <!-- 路径 -->
+                        <div id="path-info">路程：<span class="text-info">4km</span></div>
+                    </div>
+                </div>
+
+                <!-- 未折叠弹出框的操作栏（购票，收藏） -->
+                <div id="station-action-bar" class="clearfix">
+                    <div class="grid">
+                        <!-- 票价 -->
+                        <div id="ticket-price">票价：<span>2</span><span>¥</span></div>
+                        <!-- 点击购买 -->
+                        <div class="btn-container">
+                            <button id="buy-ticket" class="btn">点击购买</button>
+                        </div>
+                        <!-- 添加收藏 -->
+                        <div class="btn-container">
+                            <button id="add-collection" class="btn">添加收藏</button>
+                        </div>
+                        <!-- 票价说明 -->
+                        <div class="btn-container">
+                            <button id="ticket-info" class="btn">票价说明</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右上角关闭按钮 -->
+            <div id="close-btn">×</div>
+
+            <!-- 右侧折叠按钮 -->
+            <div id="fold-btn">
+                <img src="../../img/triangle.png">
+            </div>
+
+            <!-- 中间的分割线 -->
+            <div id="middle-line"></div>
+        </div>
+
+        <!-- 点击站点弹出框 -->
+        <div id="tip-wrapper">
+            <div id="tip-body">
+                <span class="tip-name-detail">
+                    <span id="tip-name"></span>
+                    <div id="route-num"></div>
+                    <div id="route-num"></div>
+                </span>
+                <div class="tip-route">
+                    <div class="tip-route-btn-start">起点</div>
+                    <div class="tip-route-btn-end">终点</div>
+                </div>
+            </div>
+            <div id="tip-footer"></div>
+        </div>
+
+        <!-- 选择起点后残留的标志 -->
+        <div class="startId ident"></div>
+        <div class="endId ident"></div>
+
+        <!-- 错误消息模态框 -->
+        <div class="err-msg-modal-box">
+            <div class="container">
+                <p>提示</p>
+                <p></p>
+                <button>确定</button>
+            </div>
+        </div>
+
+        <!-- 票价说明弹出框 -->
+        <div id="ticket-info-modal-box">
+            <div id="fare-rules">
+                <p class="fare-rules-header">票价规则</p>
+                <p>起步价：首4公里<span>2</span>元；</p>
+                <p>4公里至12公里部分，每元可乘坐<span>4</span>公里；</p>
+                <p>12公里至24公里部分，每元可乘坐<span>6</span>公里；</p>
+                <p>超过24公里，每元可乘坐<span>8</span>公里。</p>
+            </div>
+            <div id="close-btn">×</div>
+        </div>
+
+        <!-- 提示用户未登录弹出框 -->
+        <div class="not-login-tip-box">
+            <div class="container">
+                <p class="tips">当前为游客模式，<br>登录后才享有此功能，<br>是否登录？</p>
+                <div class="btn-group">
+                    <button class="yes-btn">是</button>
+                    <button class="no-btn">否</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 遮罩层 -->
+        <div class="mask-layer"></div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer></footer>
+
+</body></html>
